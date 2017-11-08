@@ -1,0 +1,122 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 80px;
+}
+
+nav {
+background-color: #64401E;
+padding: 15px;
+}
+
+nav ul li {
+  padding: 0 15px;
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  margin-top: 4px;
+  font-family: "Verdana";
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.signup {
+  padding-top: 40px;
+  text-align: center;
+  line-height: 50px;
+  padding-bottom: 25px;
+}
+
+.signup p {
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+}
+
+.black-background {
+  background-color:#000000;
+}
+
+.white {
+  color:#fff;
+}
+
+.cont {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px 20px 60px 20px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.jumbotron  {
+  color: #000;
+}
+
+.link {
+  text-align: center;
+}
+
+.cadastro {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.col-md-6 p {
+  text-align: center;
+  font-size: 15px;
+}
+
+small {
+  float: left;
+  margin-top: -25px;
+}
+
+footer {
+  margin-top: -20px;
+  color: #777;
+  float: right;
+  margin-bottom: 20px;
+}
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
